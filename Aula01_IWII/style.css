@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 1%;
+}
+
+.header{
+    background-color: rgb(78, 78, 78);
+    color: whitesmoke;
+    width: 100%;
+}
+
+.title-inicial{
+    font-size: 1em;
+    text-decoration: dotted;
+    display: flex;
+    text-align: center;
+}
+
+.botao{
+    width: 100%;
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 3px;
+    padding: 1%;
+}
+
+.button-trocapg{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#troca-de-pg{
+    margin-top: 2em;
+}
