@@ -18,14 +18,14 @@ function funcao2(){
 
 function funcao3(){
     for (let i = 1; i < 11; i++) {
-        console.log(i);
+        alert(i);
     }
 }
 
 function funcao4(){
     let num = prompt("Digite um valor: ");
     while (num>=0){
-        console.log(num);
+        alert(num);
         num--;
     }
 }
@@ -33,7 +33,7 @@ function funcao4(){
 function funcao5(){
     let num = prompt("Digite um valor: ");
     for (let i = 1; i < 11; i++) {
-        console.log(num + "x" + i + "=" + num * i);
+        alert(num + "x" + i + "=" + num * i);
     }
 }
 
@@ -47,7 +47,7 @@ function funcao6(){
         i++;
     }
 
-    console.log("A soma é: " + soma);
+    alert("A soma é: " + soma);
 }
 
 function funcao7(){
@@ -62,22 +62,21 @@ function funcao7(){
     }
 
     if (num <= 1) {
-        console.log("Não é primo");
+        alert("Não é primo");
     } else if (primo) {
-        console.log("É número primo");
+        alert("É número primo");
     } else {
-        console.log("Não é primo");
+        alert("Não é primo");
     }
 }
 
 function funcao8(){
-    let user = prompt("Digite o seu nome de usuário: ");
-    let senha = Number(prompt("Digite a sua senha (apenas números): "));
-    let userC = "vanin";
-    let senhaC = 12345;
-
     while (true) {
-        if ((user != userC) && (senha != senhaC) ){
+        let user = prompt("Digite o seu nome de usuário:\nDica: vanin");
+        let senha = Number(prompt("Digite a sua senha (apenas números):\nDica: 12345"));
+        let userC = "vanin";
+        let senhaC = 12345;
+        if ((user != userC) || (senha != senhaC) ){
             alert("Tente novamente!");
         } else {
             alert ("Seja muito bem-vindo senhor Vanin!");
@@ -87,17 +86,20 @@ function funcao8(){
 }
 
 function funcao9(){
-    let num = Number(prompt("Digite um valor: "));
     let soma = 0;
-    while (num > 0){
-        num  = Number(prompt("Digite outro valor, este será somado até que digite um valor menor que 0"));
-        soma = soma + num;
-        total = soma + 1;
-        if (num < 0 ){
-            alert("A soma total é: " + soma);
-            break
+    let numero;
+
+    while (true) {
+        numero = Number(prompt("Digite um número (negativo para parar):"));
+
+        if (numero < 0) {
+            break;
         }
+
+        soma += numero;
     }
+
+    alert("A soma total é: " + soma);
 }
 
 function funcao10(){
@@ -149,10 +151,10 @@ function funcao13(){
     let situacao;
     if (media >= 7) {
         situacao = "aprovado";
-        alert("Sua situação é: " + situacao);
+        alert("Sua média final é: " + media.toFixed(2) + "\nSua situação é: " + situacao);
     } else {
         situacao = "reprovado";
-        alert("Sua situação é: " + situacao);
+        alert("Sua média final é: " + media.toFixed(2) + "\nSua situação é: " + situacao);
     }
 }
 
@@ -176,7 +178,7 @@ function funcao15(){
 
     for (let i = 1; i <= numero; i++) {
         if (i % 2 !== 0) {
-            console.log(i);
+            alert(i);
         }
     }
 }
