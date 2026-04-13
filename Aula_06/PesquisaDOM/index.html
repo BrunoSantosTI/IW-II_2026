@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Introdução ao DOM (JavaScript)</h1>
+        <h2 class="subtitulo">IW-II 2026</h2>
+    </header>
+
+    <main>
+        <div class="box">
+            <h2 class="titulo">Parte 1 — Pesquisa</h2>
+    
+            <h3 class="subtitulo">1. O que é DOM?</h3>
+            <p class="texto1">
+                O DOM (Document Object Model) é uma representação da página HTML em forma de árvore,
+                onde cada elemento pode ser acessado e manipulado pelo JavaScript. Ele permite alterar
+                textos, estilos e até a estrutura da página dinamicamente. Dessa forma, o HTML cria a
+                base da página, enquanto o DOM permite que o JavaScript interaja com essa estrutura.
+            </p>
+            
+            <hr>
+
+            <h3 class="subtitulo">2. O que é um nó (node)?</h3>
+            <p class="texto1">
+                Um nó é cada parte que compõe o DOM. Existem diferentes tipos, como os elementos
+                (tags HTML), atributos (como id e class) e os nós de texto (conteúdo dentro das tags).
+                Toda a estrutura da página é formada por esses nós organizados em forma de árvore.
+            </p>
+            
+            <hr>
+
+            <h3 class="subtitulo">3. Métodos do DOM</h3>
+            <p class="texto1">
+                O método <b>getElementById()</b> seleciona um elemento específico pelo seu id.
+                Já o <b>querySelector()</b> retorna o primeiro elemento que corresponde a um seletor CSS.
+                O <b>querySelectorAll()</b> retorna todos os elementos que correspondem ao seletor,
+                permitindo manipular vários elementos ao mesmo tempo.
+            </p>
+    
+            <hr>
+
+            <h3 class="subtitulo">4. innerHTML x innerText</h3>
+            <p class="texto1">
+                O <b>innerHTML</b> permite acessar ou modificar o conteúdo incluindo tags HTML,
+                enquanto o <b>innerText</b> trabalha apenas com o texto visível, sem interpretar
+                qualquer código HTML.
+            </p>
+            
+            <hr>
+
+            <h3 class="subtitulo">5. Eventos</h3>
+            <p class="texto1">
+                Eventos são ações que acontecem na página, como cliques ou mudanças em elementos.
+                Exemplos comuns são <b>onclick</b> (quando o usuário clica), <b>onchange</b>
+                (quando um valor é alterado) e <b>onmouseover</b> (quando o mouse passa sobre um elemento).
+            </p>
+        </div>
+    
+        <div class="box">
+            <h2 class="titulo">Parte 2 — Prática</h2>
+            
+            <div class="box-pratica">
+                <p class="texto" id="texto">Este é o texto original.</p>
+                <button class="btn" onclick="mudarTexto()">Clique para mudar o texto</button>
+            </div>
+        </div>
+    
+        <div class="box">
+            <h2 class="titulo">Parte 3 — Desafios</h2>
+            
+            <div class="box-desafios">
+                <div class="mudacor">
+                    <button class="btn" onclick="mudarCor()">Mudar cor de fundo</button>
+                </div>
+                <div class="contador">
+                    <p class="texto" id="contador">0</p>
+                    <button class="btn" onclick="aumentar()">Aumentar contador</button>
+                </div>
+        
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

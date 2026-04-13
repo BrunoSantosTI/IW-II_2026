@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #6AC259;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h2{
+    color: #4E8B36;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.body{
+    background-color: #fff;
+}
+
+main {
+    margin: 30px;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2;
+    /* color: #212529; */
+}
+
+h2 {
+    text-align: center
+}
+
+h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.texto, .texto1{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.texto1 {
+    text-align: justify;
+}
+
+.btn {
+    border-radius: 30px;
+    border: none;
+    background-color: #6AC259;
+    cursor: pointer;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.2;
+    width: 100%;
+    font-size: 1.1em;
+}   
+
+.box {
+    background-color: #4E8B36;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.box-pratica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-desafios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+    gap: 2em;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mudacor {
+    width: 100%;
+}
+
+hr {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #fff;
+    opacity: 1
+}
