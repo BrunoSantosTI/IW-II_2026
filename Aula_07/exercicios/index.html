@@ -5,31 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicios de javascript</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="box-exercicio">
-        <h1>Exercicio 1</h1>
-        <p>clique no botão para mostrar o texto</p>
-        <p id="escondido" class="escondido">paragrafo escondido</p>
-        <button type="button" id="texto1" onclick="aparecer()">Clique aqui</button>
-        <script src="index.js"></script>
-    </div>
-    <div class="box-exercicio">
-        <h1>Exercício 2</h1>
-        <input type="text" class="inputNome" id="inputNome" placeholder="Seu nome...">
-        <button onclick="mostrarNome()">Enviar</button>
+    <header>
+        <h1>Introdução ao DOM (JavaScript)</h1>
+        <h2 class="subtitulo">IW-II 2026</h2>
+    </header>
 
-        <p id="mensagem"></p>
-    </div>
-    <div class="box-exercicio">
-        <h1>Exercício 3</h1>
-        <input type="number" class="inputIdade" id="inputIdade" placeholder="Sua idade...">
-        <button onclick="maioridade()">Enviar</button>
+    <main>
+        <div class="box-exercicio">
+            <h1>Exercicio 1 - Mostrar Parágrafo</h1>
+            <p>clique no botão para mostrar o texto</p>
+            <p id="escondido" class="escondido">paragrafo escondido</p>
+            <button class="btn" type="button" id="texto1" onclick="aparecer()">Clique aqui</button>
 
-        <p id="textoidade"></p>
-    </div>
-    <div class="box-exercicio">
-
-    </div>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 2 - Mostrar Nome</h1>
+            <input type="text" class="inputNome" id="inputNome" placeholder="Seu nome...">
+            <button class="btn" onclick="mostrarNome()">Enviar</button>
+    
+            <p id="mensagem"></p>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 3 - Teste de Maioridade</h1>
+            <input type="number" class="inputIdade" id="inputIdade" placeholder="Sua idade...">
+            <button class="btn" onclick="maioridade()">Enviar</button>
+    
+            <p id="textoidade"></p>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 4 - Mudar Cor de Fundo</h1>
+            <button class="btn" onclick="mudarcor()">Mudar cor de fundo</button>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 5 - Troca de Modo</h1>
+            <button class="btn" id="darkbtn" onclick="Mododark()">Modo Dark</button>
+            <button class="btn" id="lightbtn" onclick="Modolight()">Modo Light</button>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 6 e 7 - Lista</h1>
+            <input type="text" id="texto" placeholder="Digite o nome do item...">
+            <button class="btn" onclick="adicionarItem()">Adicionar</button>
+            <ul id="lista"></ul>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 8 - Número Par ou Ímpar</h1>
+            <input type="number" id="ParImpar" placeholder="Digite um número...">
+            <button class="btn" onclick="ParImpar()">Testar</button>
+            <p id="textovalor"></p>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 9 - Senha</h1>
+            <input type="password" id="senha" placeholder="Digite a sua senha...">
+            <button class="btn" onclick="validarSenha()">Validar</button>
+            <p id="resultadoSenha"></p>
+        </div>
+    
+        <div class="box-exercicio">
+            <h1>Exercício 10 - Desafio</h1>
+            <input type="text" id="nome" placeholder="Digite o nome do item...">
+            <button class="btn" onclick="adicionarNome()">Adicionar</button>
+            <p>Total: <span id="contador">0</span></p>
+            <ul id="listaNomes"></ul>
+        </div>
+    </main>
 </body>
 </html>

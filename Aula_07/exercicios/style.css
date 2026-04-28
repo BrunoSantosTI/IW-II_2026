@@ -1,7 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+header{
+    background-color: #6AC259;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2em;
+}
+
+.body{
+    background-color: #fff;
+}
+
+main {
+    margin: 30px;
+    line-height: 1.6;
+}
+
+.box-exercicio {
+    background-color: #4E8B36;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.box-exercicio h1, .box-exercicio p {
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.btn {
+    border-radius: 30px;
+    border: none;
+    background-color: #6AC259;
+    cursor: pointer;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.2;
+    width: 100%;
+    font-size: 1.1em;
+}  
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 1.5em;
+}
+
 .escondido{
     display: none;
 }
 
 .textoNome{
     display: none;
+}
+
+#lightbtn{
+    display: none;
+}
+
+#darkbtn{
+    display: block;
+}
+
+li {
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.btn-lista {
+    border: none;
+    margin-left: 1em;
+    background-color: #6AC259;
+    padding: 1%;
+    color: #fff;
+    border-radius: 5px;
 }
