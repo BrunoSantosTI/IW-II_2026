@@ -1,0 +1,49 @@
+{
+  "nome": "Michael Jackson",
+  "apelido": "King of Pop",
+
+  "personalidade": {
+    "criativo": true,
+    "carismatico": true,
+    "perfeccionista": true,
+    "timido": true,
+    "determinado": true
+  },
+
+  "habilidades": {
+    "canto": true,
+    "danca": true,
+    "composicao": true,
+    "beatbox": true,
+    "performance": "Excelente"
+  },
+
+  "estilo_musical": {
+    "generos": [
+      "Pop",
+      "Rock",
+      "R&B",
+      "Soul",
+      "Funk"
+    ]
+  },
+
+  "marcas_registradas": [
+    "Moonwalk",
+    "Anti-Gravity Lean",
+    "Luva brilhante",
+    "Chapéu Fedora",
+    "Jaqueta militar"
+  ],
+
+  "qualidades": {
+    "presenca_de_palco": "Muito alta",
+    "inovacao": "Alta",
+    "impacto_cultural": "Global"
+  },
+
+  "legado": {
+    "influencia": "Um dos maiores artistas da história",
+    "apelido": "King of Pop"
+  }
+}
